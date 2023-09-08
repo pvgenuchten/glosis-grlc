@@ -3,7 +3,7 @@ PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
 SELECT DISTINCT ?term ?concept ?prefLabel WHERE  {
      ?concept skos:prefLabel ?term .
      ?concept skos:inScheme ?conceptScheme .
-     FILTER(regex(str(?conceptScheme),'CarbonOrganicProcedure'))
+     FILTER(regex(str(?conceptScheme),'carbonOrganicProcedure'))
      ?concept skos:prefLabel ?prefLabel .
  }
  ORDER BY ?term
