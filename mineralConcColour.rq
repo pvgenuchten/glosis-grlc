@@ -1,9 +1,10 @@
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
 
-SELECT DISTINCT ?term ?concept ?prefLabel WHERE  {
+SELECT DISTINCT ?term ?concept ?prefLabel ?definition WHERE  {
      ?concept skos:prefLabel ?term .
      ?concept skos:inScheme ?conceptScheme .
      FILTER(regex(str(?conceptScheme),'mineralConcColourValueCode'))
      ?concept skos:prefLabel ?prefLabel .
+     ?concept skos:definition ?definition.
  }
  ORDER BY ?term
