@@ -1,0 +1,7 @@
+title: GLOSIS API by GRLC
+contact:
+  name: Paul van Genuchten
+  url: https://github.com/glosis-ld/glosis
+licence: https://github.com/pvgenuchten/glosis-grlc/blob/main/LICENSE
+queries:
+  - https://raw.githubusercontent.com/pvgenuchten/glosis-grlc/main/glosis.rq
