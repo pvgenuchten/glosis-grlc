@@ -1,0 +1,7 @@
+SELECT DISTINCT ?term ?concept ?prefLabel WHERE  {
+     ?concept skos:prefLabel ?term .
+     ?concept skos:inScheme ?conceptScheme .
+     FILTER(regex(str(?conceptScheme),'CarbonOrganicProcedure'))
+     ?concept skos:prefLabel ?prefLabel .
+ }
+ ORDER BY ?term
